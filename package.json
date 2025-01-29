@@ -1,0 +1,16 @@
+{
+  "name": "yourplaylist_backend",
+  "version": "1.0.0",
+  "description": "a backend project with MongDb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "MogoDb",
+    "backend"
+  ],
+  "author": "Deepthy Nair",
+  "license": "ISC"
+}
