@@ -1,22 +1,23 @@
 const asyncHandler = (requestHandler) => {
-  (req, res, next) => {
-    Promise.resolve(requestHandler(req, res, next)).catchcatch((err) =>
-      next(err)
-    );
+  return (req, res, next) => {
+    console.log("from register");
+    Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));
   };
 };
 
-export { asyncHandler };
-
+/* 
 const asyncHandler1 = (fn) => async () => {};
 
-const asyncHandler2 = (fn) => async (req, resizeBy, next) => {
+const asyncHandler = (fn) => async (req, res, next) => {
   try {
     await fn(req, res, next);
   } catch (error) {
+    console.log(error);
     res.status(error.code || 500).json({
       success: false,
       message: error.message,
     });
   }
 };
+*/
+export { asyncHandler };
