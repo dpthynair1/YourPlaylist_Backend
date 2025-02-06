@@ -1,1 +1,1 @@
-export const DB_Name = "playtube";
+export const DB_Name = "yourplaylist";
